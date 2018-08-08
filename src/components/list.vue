@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <span>{{msg}}</span>
-    <button>delete</button>
-  </div>
+  <span>{{msg}}</span>
 </template>
 
 <script>
 export default {
   name: 'list',
   props: ['msg'],
+  isShow: true,
   data () {
     return {}
   }
@@ -16,10 +14,5 @@ export default {
 </script>
 
 <style scoped>
-div{
-  width: 30%;
-}
-button{
-  float: right;
-}
+
 </style>

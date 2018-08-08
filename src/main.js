@@ -6,8 +6,12 @@ import router from './router'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import 'iview/dist/iview.min.js'
+import axios from 'axios'
 
 Vue.use(iView)
+axios.defaults.baseURL = '/api'
+
+Vue.prototype.axios = axios
 
 Vue.config.productionTip = false
 
